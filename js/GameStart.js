@@ -18,4 +18,7 @@ InfiniteScroller.GameStart.prototype = {
 	update: function () {
 
 	}
+
+
+
 };
