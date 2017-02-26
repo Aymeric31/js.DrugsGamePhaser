@@ -23,6 +23,7 @@ InfiniteScroller.Preload.prototype = {
         this.load.audio('music', 'assets/audio/music_snoop.mp3');
 
         this.load.image('chest', 'assets/images/chest2.png');
+
         this.load.image('flag', 'assets/images/endGame.png');
 
         this.load.image('pills', 'assets/images/pill2.png');
@@ -42,6 +43,6 @@ InfiniteScroller.Preload.prototype = {
 
     },
     create: function () {
-        this.state.start('Game');
+        this.state.start('GameStart');
     }
 };
