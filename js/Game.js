@@ -58,9 +58,9 @@ InfiniteScroller.Game.prototype = {
 
     this.swipe = this.game.input.activePointer;
 
-    this.whineSound = this.game.add.audio('music');
-    this.whineSound.loop = true;
-    this.whineSound.play();
+    this.gameSound = this.game.add.audio('music');
+    this.gameSound.loop = true;
+    this.gameSound.play();
 
     this.hit = 0;
     this.wraps = 0;
@@ -204,6 +204,7 @@ InfiniteScroller.Game.prototype = {
   gameOver: function () {
     lsd = false;
     kit = true;
+    this.gameSound.stop();
 
     this.game.state.start('GameStart');
   },
